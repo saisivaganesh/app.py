@@ -3,10 +3,9 @@ import pandas as pd
 from pandas_datareader import data as pdr
 import datetime
 import yfinance as yf
-import mplfinance as mpf
 from prophet import Prophet
 import matplotlib.pyplot as plt
-import plotly.graph_objects as go
+
 #BTCのチャートを取得
 tickers = ['BTC-JPY']
 #取得開始日を入力
@@ -34,7 +33,7 @@ fig = model.plot(forecast)
 ax = fig.gca()
 ax.set_title('ビットコイン3ヵ月予測チャート',fontname="UD Digi Kyokasho N-B", fontsize=21)
 arrowprops=dict(arrowstyle='->')
-plt.savefig("output.jpg")
+
 st.pyplot(fig)
 # グラフの表示
 fig.show()

@@ -1,0 +1,9 @@
+streamlit
+pandas
+pandas_datareade
+datetim
+yfinance
+
+prophet
+matplotlib
+
