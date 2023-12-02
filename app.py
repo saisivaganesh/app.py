@@ -31,7 +31,7 @@ forecast = model.predict(future)
 #表示
 fig = model.plot(forecast)
 ax = fig.gca()
-ax.set_title('BITCOIN`S CHART FOR NEXT 3 MONTHS！',fontname="UD Digi Kyokasho N-B", fontsize=21)
+ax.set_title('BITCOIN`S CHART UP TO NEXT 3 MONTHS',fontname="UD Digi Kyokasho N-B", fontsize=21)
 arrowprops=dict(arrowstyle='->')
 
 st.pyplot(fig)
